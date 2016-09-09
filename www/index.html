@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+        <!-- See: http://content-security-policy.com/ -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com; script-src * 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src *; connect-src 'self' https://*.your-company.com http://*.your-company.com ws://localhost:35279 ws://localhost:35729">
+
+        <title>Sample App</title>
+
+        <link rel="stylesheet" href="lib/nprogress/nprogress.css">
+        <link rel="stylesheet" href="css/bundle.css">
+        <script type="text/javascript" src="lib/ionic/js/ionic.bundle.min.js"></script>
+        <script type="text/javascript" src="lib/angular-mocks/angular-mocks.js"></script>
+        <script type="text/javascript" src="lib/lodash/lodash.min.js"></script>
+        <script type="text/javascript" src="lib/moment/moment.min.js"></script>
+        <script type="text/javascript" src="lib/uri.js/uri.min.js"></script>
+        <script type="text/javascript" src="lib/nprogress/nprogress.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/build-vars.js"></script>
+        <script type="text/javascript" src="js/templates.js"></script>
+        <script type="text/javascript" src="js/bundle.js"></script>
+        <script type="text/javascript" src="js/boot1.js"></script>
+    </head>
+
+    <!-- This is the root element for the Angular/Ionic application. -->
+    <body ng-app="JustinCredible.SampleApp.Application">
+        <ion-nav-view></ion-nav-view>
+    </body>
+
+</html>
